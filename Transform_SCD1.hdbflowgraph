@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:id="e952ae75b76f65260c0bc68981d6c541" name="Transform_SCD1" runtimeBehavior="BATCH_TASK" targetSchema="EIM_DEMO">
+  <annotations xmi:id="1a0a9ca5b02ce463ef9c4486d79ac88b" key="sap.afm.layout">
+    <annotations xmi:id="f0fd136574dc7f0fb0fb5e8e57c9bba3" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="8e15766f06641378eb89dbde56363e69" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="967fe5b4ad05bde5b23e9ab9578c3d2e" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="b190aa5e731c003f009d8f44e09bafe1" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="02895ce22a703ad8cb6e9b4166f9ed64" key="sap.afm.palette">
+    <annotations xmi:id="66e192e0ba2a65cda43516509a9bf6a3" key="additions" value="">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="b44588b4dc9c1b29447bf06929759d2f" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="7e689ac27497c4701ff7c79892be96d2" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="2d4de140d39ff1efe5a1beebf9c6a5b5" key="sap.afm.nodeOutputs">
+    <annotations/>
+  </annotations>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="a443af959c36009c53a49e9b3e782282" name="TABLECOMPARISON_SCD1" type="DATABASE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="TABLECOMPARISON_SCD1" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="370846212a15bf9b6e369b8a18d554cb" key="sap.afm.layout">
+      <annotations xmi:id="8104d15473fbac2a724b69936c55e4b5" key="x" value="617">
+      </annotations>
+      <annotations xmi:id="91a3c293d12963ba92fc4eb4f5c49c68" key="y" value="166">
+      </annotations>
+      <annotations xmi:id="f90e6ba588e166757922f69c9a69d6ae" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="d6923a4f994b1b2fd4fcd17c6466ab98" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="fc9c0e3f8814c0e9333cc853dc3e5909" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="149a3af2319ba1abccda1b0358ac0163" key="sap.afm.nodeInputs">
+      <annotations xmi:id="b19dc16c000ffa965a9fece83a6aea57" key="TABLECOMPARISON_SCD1_Input" value="TableComparison2_Output">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="efab114eae955669b36c9a94691dccc0" key="sap.afm.nodeOutputs">
+    </annotations>
+    <inputs name="TABLECOMPARISON_SCD1_Input" kind="TABLE" xmi:id="d7794ba3db918f21bb171256438be5e3">
+      <attributes xmi:id="f86c8335f0fd122f5bb38887ca46355d" name="ID" type="INTEGER" length="0" scale="0" nullable="false">
+        <annotations xmi:id="30d0dff170cde8cc479adbce6053cb14" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="13dfc967b01737563fb3bf5d74b9a2b0" name="NAME" type="VARCHAR" length="25" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="ac45cf497cbd35396d5f5ddfd33e718d" name="ADDRESS" type="VARCHAR" length="50" scale="0" nullable="true">
+      </attributes>
+    </inputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="4fcd0aabde1cb83495c5a84e713db1bc" name="TABLECOMPARISON_INPUT" type="DATABASE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="TABLECOMPARISON_INPUT" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="c3d8c2f9d5b9b1b4da629d3f1310f915" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="3cea20481a1bdf1fe3d4fca248900635" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="6015c4367d1358649e347e91713acbe5" key="sap.afm.layout">
+      <annotations xmi:id="55fb7718bdfb90bf20f454df61762aef" key="x" value="160">
+      </annotations>
+      <annotations xmi:id="d5c3d3eaddf29d8bfcad7c3d5bc1c0b8" key="y" value="49">
+      </annotations>
+      <annotations xmi:id="5eeed0e98b78d65cded68f8b66216936" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="b32e515290e89ba389ec2ae19f6678ab" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="5802e505acf5be8d87192f993621a29e" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="6973b4a989e4fbb79d47b88c857b4a1f" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="8e6af612c348d4e81daa8234dbac5ec0" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="99cb8a8d1cf23e3b1917e4b55fc1109b" key="TABLECOMPARISON_INPUT_Output" value="Sort4_Input">
+      </annotations>
+    </annotations>
+    <outputs name="TABLECOMPARISON_INPUT_Output" kind="TABLE" xmi:id="d15035d9151f76dd9ef705c7011ee372">
+      <attributes xmi:id="425d576295013ecbe30bcf58934ae481" name="ID" type="INTEGER" length="0" scale="0" nullable="false">
+      </attributes>
+      <attributes xmi:id="fd878006fc21131af1f22e0bd9c53ce6" name="NAME" type="VARCHAR" length="25" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="16539a1902e84c1ad93be0fdb6932057" name="ADDRESS" type="VARCHAR" length="50" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:SortNode" xmi:id="4a548e62f814bc970bee6f11d678ab57" name="Sort4" sortAttributes="cb5df92523c913acf1af5ffa48a3bd05">
+    <annotations xmi:id="9e3bd79a5d2437f3f10eec1b29aa294c" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="db263f618f0321b66003a6fc2124d139" key="sap.afm.displayName" value="Sort">
+    </annotations>
+    <annotations xmi:id="f8da582110245c0a90b22ba37ccb7f2a" key="sap.afm.layout">
+      <annotations xmi:id="8a342b667da7c42300aaab895cadcee1" key="x" value="257">
+      </annotations>
+      <annotations xmi:id="4571faeb16e4140abd8368b9ff28a0c3" key="y" value="40">
+      </annotations>
+      <annotations xmi:id="d33038a2c565b7e867e5cfdbc5c05046" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="ee716450217999b0ddc1aa5dbc5ab518" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="b74aea3f8f1609be2564b3dc3f97349b" key="sap.afm.nodeType" value="SortNode">
+    </annotations>
+    <annotations xmi:id="78e2d63acca3ec9e60c18b276659ea70" key="sap.afm.nodeInputs">
+      <annotations xmi:id="486c9162bd3a0a10df6b6f13cfe8bffe" key="Sort4_Input" value="TABLECOMPARISON_INPUT_Output">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="59589bfd6ca263dc3ff9cfa92690edf8" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="f2af394e1c32c2014ae9a7f1d03ed16e" key="Sort4" value="TableComparison2_Input">
+      </annotations>
+    </annotations>
+    <outputs name="Sort4" kind="TABLE" xmi:id="54cb6e084dd385c94c580234b3dae6ed">
+      <attributes xmi:id="4114ffd1158bfe9505e08c8a9d92fa26" name="ID" type="INTEGER" nullable="false" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="5e455445576c7faa64ebb9d555aecb00" name="NAME" type="VARCHAR" nullable="true" length="25" scale="0">
+      </attributes>
+      <attributes xmi:id="75ed6af21276995770be2dea4aca1b71" name="ADDRESS" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+    </outputs>
+    <inputs name="Sort4_Input" xmi:id="4356d83ee5321b213dba37b8626f2082" kind="TABLE">
+      <attributes xmi:id="cb5df92523c913acf1af5ffa48a3bd05" name="ID" type="INTEGER" nullable="false" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="8476abf25d59d098e2ef43c7aafef5df" name="NAME" type="VARCHAR" nullable="true" length="25" scale="0">
+      </attributes>
+      <attributes xmi:id="9f57cb14efc610c7d55937e9308c8a72" name="ADDRESS" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+    </inputs>
+    <tableMappings xmi:id="78168666ee1a7a36498d8fddbfebef5d" source="4356d83ee5321b213dba37b8626f2082" target="54cb6e084dd385c94c580234b3dae6ed">
+      <attributeMappings source="cb5df92523c913acf1af5ffa48a3bd05" target="4114ffd1158bfe9505e08c8a9d92fa26" xmi:id="7eef4956e6de6b1d9bb600149b76b27c">
+      </attributeMappings>
+      <attributeMappings source="8476abf25d59d098e2ef43c7aafef5df" target="5e455445576c7faa64ebb9d555aecb00" xmi:id="1aed6374e6886632e4fbfe389769f6f1">
+      </attributeMappings>
+      <attributeMappings source="9f57cb14efc610c7d55937e9308c8a72" target="75ed6af21276995770be2dea4aca1b71" xmi:id="7f9bf240d5bf880afd411d97b8e88c40">
+      </attributeMappings>
+    </tableMappings>
+    <sortOrders>ASCENDING</sortOrders>
+  </nodes>
+  <nodes xsi:type="flowgraph:TableComparisonNode" xmi:id="5407119b0f920cce9230d802ed3c4f9a" name="TableComparison2" compareTableName="TABLECOMPARISON_SCD1" compareTableType="DATABASE_TABLE" compareTableLayout="COLUMN" compareTableSchema="EIM_DEMO" compareAttributes="070b9cd641aa7d7c61b19887d500e66f de6d17f2113a1e5211843dd8e176cc04 e59b36ddc7b1c6a7b2c2997de4c6353b">
+    <annotations xmi:id="56e4b0d4a4e48b3da614a93f1e815731" key="sap.afm.displayName" value="Table Comparison">
+    </annotations>
+    <annotations xmi:id="c35326fc2cb70b30d49a8e4f220caedb" key="sap.im.tableComparisonGenDelKey" value="allRows">
+    </annotations>
+    <annotations xmi:id="0689e11745f53710aa4a006c72d6c0f0" key="sap.afm.layout">
+      <annotations xmi:id="a8ec89130077d5262b20e729744096c7" key="x" value="437">
+      </annotations>
+      <annotations xmi:id="9ab0bef6b9ae3c5761f4994dcd062d26" key="y" value="159">
+      </annotations>
+      <annotations xmi:id="148193e86504f61910e1e1ddacde09df" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="4edfe9cbe201eb897e30df49134ee705" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="f7c3c4156265e926c69f14460b487783" key="sap.afm.nodeType" value="TableComparisonNode">
+    </annotations>
+    <annotations xmi:id="d40b36f0a43a8952d43ea8acfe2a3a18" key="sap.afm.nodeInputs">
+      <annotations xmi:id="4f33adf3c5024643cb6423c8685711f0" key="TableComparison2_Input" value="Sort4">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="3fd60a7a374f26796acd51bb3befe751" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="03256dd17400428fe33185bf4fa0299f" key="TableComparison2_Output" value="TABLECOMPARISON_SCD1_Input">
+      </annotations>
+    </annotations>
+    <inputs name="TableComparison2_Input" xmi:id="6babf32198dcfd4309864e1d2981a771" kind="TABLE">
+      <attributes xmi:id="070b9cd641aa7d7c61b19887d500e66f" name="ID" type="INTEGER" nullable="false" length="0" scale="0">
+        <annotations key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="de6d17f2113a1e5211843dd8e176cc04" name="NAME" type="VARCHAR" nullable="true" length="25" scale="0">
+      </attributes>
+      <attributes xmi:id="e59b36ddc7b1c6a7b2c2997de4c6353b" name="ADDRESS" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+    </inputs>
+    <outputs name="TableComparison2_Output" xmi:id="7a6df2c7aeb82517641a95a664fb15c0">
+      <attributes xmi:id="210530a77a9c504a41f438fa66ec97b0" name="ID" type="INTEGER" nullable="false" mappedName="ID" length="0" scale="0">
+        <annotations xmi:id="bdefabce4312f3c552c58aafb733c61e" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="f48028b004803abcf1cdec68cdb75b40" name="NAME" type="VARCHAR" nullable="true" mappedName="NAME" length="25" scale="0">
+      </attributes>
+      <attributes xmi:id="40d01930082d92b48d4396b3493118ab" name="ADDRESS" type="VARCHAR" nullable="true" mappedName="ADDRESS" length="50" scale="0">
+      </attributes>
+    </outputs>
+  </nodes>
+  <tableMappings xmi:id="0dd3bee7b685eb686db3f101e55eb169" source="d15035d9151f76dd9ef705c7011ee372" target="4356d83ee5321b213dba37b8626f2082">
+    <attributeMappings source="425d576295013ecbe30bcf58934ae481" target="cb5df92523c913acf1af5ffa48a3bd05" xmi:id="30e6ac20f2bad22472165291bab80d6a">
+    </attributeMappings>
+    <attributeMappings source="fd878006fc21131af1f22e0bd9c53ce6" target="8476abf25d59d098e2ef43c7aafef5df" xmi:id="d258bf900de0ead9cc57d60d1fc418ee">
+    </attributeMappings>
+    <attributeMappings source="16539a1902e84c1ad93be0fdb6932057" target="9f57cb14efc610c7d55937e9308c8a72" xmi:id="d78d3d00e06cfcd5f365846abe9608e6">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="dfcea95a00156d36862401cb796e286d" source="54cb6e084dd385c94c580234b3dae6ed" target="6babf32198dcfd4309864e1d2981a771">
+    <attributeMappings source="4114ffd1158bfe9505e08c8a9d92fa26" target="070b9cd641aa7d7c61b19887d500e66f" xmi:id="0caacf580461a630e192dfb6e64c9816">
+    </attributeMappings>
+    <attributeMappings source="5e455445576c7faa64ebb9d555aecb00" target="de6d17f2113a1e5211843dd8e176cc04" xmi:id="ec69eadccf327ac6e00bea91b8ec640e">
+    </attributeMappings>
+    <attributeMappings source="75ed6af21276995770be2dea4aca1b71" target="e59b36ddc7b1c6a7b2c2997de4c6353b" xmi:id="580b3da0fedf0a091740a56522313816">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="dcf14c6190edc3c11bd01bd6596b78e2" source="7a6df2c7aeb82517641a95a664fb15c0" target="d7794ba3db918f21bb171256438be5e3">
+    <attributeMappings source="210530a77a9c504a41f438fa66ec97b0" target="f86c8335f0fd122f5bb38887ca46355d" xmi:id="0a82cb63e7c74a2d4bfe87c5e9507545">
+    </attributeMappings>
+    <attributeMappings source="f48028b004803abcf1cdec68cdb75b40" target="13dfc967b01737563fb3bf5d74b9a2b0" xmi:id="4ce246fdbebf035f18bdc0bdf7ca8ca6">
+    </attributeMappings>
+    <attributeMappings source="40d01930082d92b48d4396b3493118ab" target="ac45cf497cbd35396d5f5ddfd33e718d" xmi:id="2ddd5145833942476daec2f9d56920ca">
+    </attributeMappings>
+  </tableMappings>
+</flowgraph:ContainerNode>

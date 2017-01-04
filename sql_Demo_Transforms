@@ -1,0 +1,222 @@
+--EIM Demo Transforms
+
+--CREATE SCHEMA
+
+CREATE SCHEMA EIM_DEMO
+
+--GRANT PERMISSIONS TO USER AND TO _SYS_REPO
+
+GRANT delete ON SCHEMA EIM_DEMO TO _SYS_REPO WITH GRANT OPTION;
+
+-- CREATE SEQUENCE FOR HISTORY PRESERVING TRANSFORM
+
+CREATE SEQUENCE "EIM_DEMO"."EIM_SEQUENCE" START WITH 41
+
+
+-- 2. CREATE COLUMN TABLEs
+
+CREATE COLUMN TABLE "EIM_DEMO"."CONTRACT" (
+	"ContractID" integer NULL ,
+	"Version" varchar(50) NULL ,
+	"Comments" varchar(50) NULL ,
+	"StartDate" timestamp NULL 
+);
+
+CREATE COLUMN TABLE "EIM_DEMO"."HR" (
+	"EmployeeID" integer NULL ,
+	"EmployeeName" varchar(50) NULL ,
+	"ReportsTo" integer NULL 
+);
+
+CREATE COLUMN TABLE "EIM_DEMO"."HIERARCHY" (
+	"GEO_KEY" integer NULL ,
+	"GEO_NAME" varchar(25) NULL ,
+	"GEO_TYPE" varchar(25) NULL ,
+	"GEO_PARENT" integer NULL 
+);
+
+CREATE COLUMN TABLE "EIM_DEMO"."PRODUCTPROPERTIES" (
+	"PRODUCTID" integer NULL ,
+	"PROPERTY" varchar(50)  NULL ,
+	"PROPVALUE" integer NULL 
+);
+
+CREATE COLUMN TABLE "EIM_DEMO"."REGIONSALESCOST" (
+	"Region" varchar(50) NULL ,
+	"Sales_Q1" integer NULL ,
+	"Sales_Q2" integer NULL ,
+	"Sales_Q3" integer NULL ,
+	"Sales_Q4" integer NULL ,
+	"Cost_Q1" integer NULL ,
+	"Cost_Q2" integer NULL ,
+	"Cost_Q3" integer NULL ,
+	"Cost_Q4" integer NULL 
+);
+
+CREATE COLUMN TABLE "EIM_DEMO"."TABLECOMPARISON_INPUT" (
+	"ID" integer NOT NULL ,
+	"NAME" varchar(25) NULL ,
+	"ADDRESS" varchar(50) NULL 
+);
+
+CREATE COLUMN TABLE "EIM_DEMO"."TABLECOMPARISON_SCD1" (
+	"ID" integer NOT NULL ,
+	"NAME" varchar(25) NULL ,
+	"ADDRESS" varchar(50) NULL,
+PRIMARY KEY ("ID")
+);
+
+
+CREATE COLUMN TABLE "EIM_DEMO"."TABLECOMPARISON_SCD2" (
+	"ID" integer NULL ,
+	"NAME" varchar(25) NULL ,
+	"ADDRESS" varchar(50) NULL ,
+	"SID" integer NOT NULL ,
+	"CurrentValue" integer NULL ,
+	"ValidFrom" timestamp NULL ,
+	"ValidTo" timestamp NULL ,
+	PRIMARY KEY ("SID")
+);
+
+
+CREATE COLUMN TABLE "EIM_DEMO"."CUSTOMER" (
+	"Cust_ID" varchar(10) NOT NULL ,
+	"Cust_classf" varchar(2) NULL ,
+	"Name1" varchar(35) NULL ,
+	"Address" varchar(35) NULL ,
+	"City" varchar(35) NULL ,
+	"Region_ID" varchar(2) NULL ,
+	"Zip" varchar(10) NULL 
+);
+
+
+CREATE COLUMN TABLE "EIM_DEMO"."EMPLOYEE" (
+	"Emp_ID" integer NOT NULL ,
+	"Lname" varchar(20) NULL ,
+	"Fname" varchar(10) NULL ,
+	"Region" varchar(2) NULL ,
+	"Address1" varchar(50) NULL ,
+	"Address2" varchar(50) NULL ,
+	"City" varchar(20) NULL ,
+	"State" varchar(10) NULL ,
+	"Zip" integer NULL ,
+	"Country" varchar(15) NULL 
+);
+
+CREATE COLUMN TABLE "EIM_DEMO"."EMPLOYEE_DETAILS" (
+	"Emp_ID" integer NOT NULL ,
+	"Start_Date" timestamp NULL ,
+	"Bank_Account" varchar(10) NULL ,
+	"Salary" integer NULL 
+);
+
+CREATE COLUMN TABLE "EIM_DEMO"."REGION" (
+        Region_ID	varchar(2) primary key,
+        Region_Name	varchar(18),
+        Region_Type	varchar(10)
+);
+
+CREATE COLUMN TABLE "EIM_DEMO"."ISBN_INPUT" (
+	"ID" integer NULL ,
+	"ISBN" varchar(50) NULL 
+);
+
+-- 3. Add data
+
+INSERT INTO "EIM_DEMO"."CONTRACT" VALUES  (100,	'1.0',	'First Version','2016-01-01 00:00:00');
+INSERT INTO "EIM_DEMO"."CONTRACT" VALUES	(100,	'1.1',	'Minor changes in chapter 9','2016-08-01 00:00:00');
+INSERT INTO "EIM_DEMO"."CONTRACT" VALUES  (100,	'2.0',	'Added new chapters 11 and 12','2016-12-01 00:00:00');
+INSERT INTO "EIM_DEMO"."CONTRACT" VALUES	(200,	'1.0',	'First Version','2015-01-01 00:00:00');
+
+
+INSERT INTO "EIM_DEMO"."HR" VALUES	(1,	'Bob', NULL);
+INSERT INTO "EIM_DEMO"."HR" VALUES	(2,	'Frank', 1);
+INSERT INTO "EIM_DEMO"."HR" VALUES	(3,	'Linda', 1);
+INSERT INTO "EIM_DEMO"."HR" VALUES	(4,	'David', 2);
+INSERT INTO "EIM_DEMO"."HR" VALUES	(5,	'James', 2);
+INSERT INTO "EIM_DEMO"."HR" VALUES	(6,	'Annie', 3);
+INSERT INTO "EIM_DEMO"."HR" VALUES	(7,	'Louise', 3);
+INSERT INTO "EIM_DEMO"."HR" VALUES	(8,	'Eric', 4);
+INSERT INTO "EIM_DEMO"."HR" VALUES	(9,	'Ben', 4);
+
+
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (1, 'USA', 'Country', 0) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (2, 'CA', 'State', 1) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (3, 'San Fransisco', 'City', 2) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (4, 'Height', 'Street', 3) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (5, 'Original Joe''s', 'Business', 4) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (6, 'CO', 'State', 1) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (7, 'Boulder', 'City', 6) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (8, 'Main Street', 'Street', 7) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (9, 'New Joe''s', 'Business', 8) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (10, 'High Street', 'Street', 7) ;
+INSERT INTO "EIM_DEMO"."HIERARCHY" VALUES (11, 'Ben''s', 'Business', 10) ;
+
+
+INSERT INTO "EIM_DEMO"."PRODUCTPROPERTIES" VALUES (1, 'Weight', 75);
+INSERT INTO "EIM_DEMO"."PRODUCTPROPERTIES" VALUES (1, 'Height', 100);
+INSERT INTO "EIM_DEMO"."PRODUCTPROPERTIES" VALUES (1, 'MaxPackage', 5);
+INSERT INTO "EIM_DEMO"."PRODUCTPROPERTIES" VALUES (1, 'Color', 255);
+INSERT INTO "EIM_DEMO"."PRODUCTPROPERTIES" VALUES (2, 'Weight', 10);
+INSERT INTO "EIM_DEMO"."PRODUCTPROPERTIES" VALUES (3, 'Height', 25);
+
+
+INSERT INTO "EIM_DEMO"."REGIONSALESCOST" VALUES	('North', 100, 200, 300, 400, 10, 20, 30, 40);
+INSERT INTO "EIM_DEMO"."REGIONSALESCOST" VALUES	('South', 150, 250,	300, 250, 10, 10, 10, 10);
+INSERT INTO "EIM_DEMO"."REGIONSALESCOST" VALUES	('Central', 500, 400, 300, 200,	90,	80,	70,	60);
+
+
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_INPUT" VALUES (10, 'Joe', '11 Rehab Street') ;
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_INPUT" VALUES (20, 'Sid', '13 Deadhead Road') ;
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_INPUT" VALUES (30, 'Charlie', '15 Yukon Lane') ;
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_INPUT" VALUES (40, 'Dolly', 'ldrush Saloon') ;
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_INPUT" VALUES (50, 'Elvis', 'Graceland, Memphis') ;
+
+
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_SCD1" VALUES (10, 'Joe', '12 Halfway House');
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_SCD1" VALUES (20, 'Sid', '13 Cadillac Dr.') ;
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_SCD1" VALUES (30, 'Charlie', '15 Yukon Lane');
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_SCD1" VALUES (40, 'Dolly', 'ldrush Saloon');
+
+
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_SCD2" VALUES (10, 'Joe', '12 Halfway House', 10, 1, '1900-01-01 00:00:00', '9000-12-31 00:00:00');
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_SCD2" VALUES (20, 'Sid', '13 Cadillac Dr.', 20, 1, '1900-01-01 00:00:00', '9000-12-31 00:00:00'); 
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_SCD2" VALUES (30, 'Charlie', '15 Yukon Lane', 30, 1, '1900-01-01 00:00:00', '9000-12-31 00:00:00'); 
+INSERT INTO "EIM_DEMO"."TABLECOMPARISON_SCD2" VALUES (40, 'Dolly', 'ldrush Saloon', 40, 1, '1900-01-01 00:00:00', '9000-12-31 00:00:00'); 
+
+
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('SA01', 'PD', 'Trusty Manufacturers', '11 London Dr.', 'Boston', 1, '10101');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('SA02', 'PP', 'New Times', '22 Cairo St.', 'Memphis', 9, '20202');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('SA03', 'OR', 'Popular Press', '33 Tokyo Ave.', 'Dallas', 2, '30303');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('PO01', 'WA', 'Mills Steel', '44 Stockholm Ct.', 'Phoenix', 3, '40404');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('KT01', 'DE', 'Faster Networks', '55 Bombay St.', 'San Die;', 3, '50505');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('KT02', 'OR', 'Major Resellers', '66 Sidney Dr.', 'Birmingham', 4, '60606');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('PO02', 'DE', 'Close Associates', '77 Salem Ave.', 'Richmond', 1, '70707');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('DT01', 'SW', 'Better Rewards', '88 Paris Dr.', 'Miami', 1, '80808');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('DT02', 'OR', 'Safer Airlines', '99 Berlin Ave.', 'Spokane', 3, '90909');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('KT03', 'WA', 'Proper Services', '110 Dublin St.', 'Columbus', 1, '10001');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('DT03', 'PD', 'Potty Ceramics', '121 Beijing Ave.', 'Houston', 9, '20002');
+INSERT INTO "EIM_DEMO"."CUSTOMER" VALUES ('PO03', 'SW', 'Usable Software', '132 Singapore Dr.', 'Indianapolis', 1, '30003');
+
+
+INSERT INTO "EIM_DEMO"."EMPLOYEE" VALUES('1', 'Brown', 'Charlie', '9','Alcatraz','Cell 1','San Francisco','CA','94050','USA');
+INSERT INTO "EIM_DEMO"."EMPLOYEE" VALUES('2', 'Smith', 'John', '9','Alcatraz','Cell 2','San Francisco','CA','94050','USA');
+INSERT INTO "EIM_DEMO"."EMPLOYEE" VALUES('3', 'Jones', 'Jane', '9','Alcatraz','Cell 3','San Francisco','CA','94050','USA');
+INSERT INTO "EIM_DEMO"."EMPLOYEE" VALUES('4', 'Brown', 'Susie', '9', 'Alcatraz','Cell 4','San Francisco','CA','94050','USA');
+
+INSERT INTO "EIM_DEMO"."EMPLOYEE_DETAILS" VALUES('1', '2015-01-01 00:00:00', '123456', '20000');
+INSERT INTO "EIM_DEMO"."EMPLOYEE_DETAILS" VALUES('2', '2015-02-11 00:00:00', '678901', '22500');
+INSERT INTO "EIM_DEMO"."EMPLOYEE_DETAILS" VALUES('3', '2015-03-21 00:00:00', '987654', '23300');
+INSERT INTO "EIM_DEMO"."EMPLOYEE_DETAILS" VALUES('4', '2015-04-25 00:00:00', '109642', '21250');
+
+INSERT INTO "EIM_DEMO"."REGION" VALUES (1, 'West', 'USA');
+INSERT INTO "EIM_DEMO"."REGION" VALUES (2, 'Central', 'USA');
+INSERT INTO "EIM_DEMO"."REGION" VALUES (3, 'East', 'USA');
+INSERT INTO "EIM_DEMO"."REGION" VALUES (4, 'Other', 'INTL');
+
+
+INSERT INTO "EIM_DEMO"."ISBN_INPUT" VALUES(1,	'0-552-14951-9');
+INSERT INTO "EIM_DEMO"."ISBN_INPUT" VALUES(2,	'0-471-20024-7');
+
+
+

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:version="2.0" xmi:id="28f48ff9b75ac0e3ebd41351f45ee746" name="Transform_Union" runtimeBehavior="BATCH_TASK" targetSchema="EIM_DEMO">
+  <annotations xmi:id="108ff1e53a50402b7214ef501bb0f86d" key="sap.afm.layout">
+    <annotations xmi:id="f6501dec7f03efbe7741de851ad9b8f6" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="8e040b3497a61633b45be8deeda3b5f4" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="ad4f83c9b84ce4904932ee5b772e428a" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="36d3a53a9f10b210225205ee024c6b41" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="d7b6cf410abb5174f6b6885beede624a" key="sap.afm.palette">
+    <annotations xmi:id="b90b03b29e6778850d2218d1887af59d" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="d32fdeda75ecfb61c936326401db56aa" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="b76aa530a794027da1ac85d38758eb05" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="9ea91091d457d51de92aa43b7075e56d" key="sap.afm.nodeOutputs">
+    <annotations/>
+  </annotations>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="9929e8a0b6b211901eb81e5055a30f3b" name="CUSTOMER" type="DATABASE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="CUSTOMER" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="f1b2324194c38d9de8c5a9a7afd2009b" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="04e62ab159e26ee8aded81229b1433d5" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="dc0c200e2fce4e86855aa77bf2d40fc5" key="sap.afm.layout">
+      <annotations xmi:id="981cd15d2199e4a0a8f0fde1cb0a4f30" key="x" value="139">
+      </annotations>
+      <annotations xmi:id="9e144e31395fc98a7753f151526c8386" key="y" value="60">
+      </annotations>
+      <annotations xmi:id="346e44e2b93064c8bb2ca761ba63f1c1" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="48b8882e0fdf732efae7e934fe848eec" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="23092d6ba23104b1e161f87a12b82141" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="58680b33c8a463502d3929595a6649ae" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="1d4ae3d7fca2c72ac9703f14e9e3b0e3" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="9582fe75ee91d5616c8dc52b0d5568f5" key="CUSTOMER_Output" value="Customer_Input"/>
+    </annotations>
+    <outputs name="CUSTOMER_Output" kind="TABLE" xmi:id="b1c85d88f24096cd9fa5175fba242bde">
+      <attributes xmi:id="d21ff35ab54acd2cb8e22b2517df0134" name="Cust_ID" type="VARCHAR" length="10" scale="0" nullable="false">
+      </attributes>
+      <attributes xmi:id="be211844b9b5502c884ed1a386e9e8aa" name="Cust_classf" type="VARCHAR" length="2" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="485a22faaf9d7f0be34b701a1a66d22c" name="Name1" type="VARCHAR" length="35" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="af41daffb537c9dcbe3c02eb34642eac" name="Address" type="VARCHAR" length="35" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="0f74696a38e991d3a79e937bb114e356" name="City" type="VARCHAR" length="35" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="d74f1cc1ca3fb50df456fc99c5f8d9e6" name="Region_ID" type="VARCHAR" length="2" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="cc11ec415610c3f96a87ca57db6221c6" name="Zip" type="VARCHAR" length="10" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="7c83cc4acc83041f2a6b4c747a1ed2a0" name="EMPLOYEE" type="DATABASE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="EMPLOYEE" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="17d476a01feeceb9bccecfeaac5ecfb0" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="ff01b3143e110c4aa2fef32a067c6f09" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="889ebe16d2c93537c423bb4843087240" key="sap.afm.layout">
+      <annotations xmi:id="2fc2fe3b9d510a0ec052a75c4e7043dc" key="x" value="139">
+      </annotations>
+      <annotations xmi:id="ef99ed5ef76417f8e3d282f318ec5f36" key="y" value="171">
+      </annotations>
+      <annotations xmi:id="32b030e5f0af495982a700b86b6d8254" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="1f67d9619dd96b3f4669420e06827cf7" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="1ad6be2f0571bece8be08aa4e9e295bd" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="e3d960a6167f2b0b74bd149bdee51861" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="d0a8f1f46a5d24519d1524cb35e1ff39" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="3b139eb116901fd83136ba45a68e600d" key="EMPLOYEE_Output" value="Employee_Input"/>
+    </annotations>
+    <outputs name="EMPLOYEE_Output" kind="TABLE" xmi:id="37a7e3122b8e6253caa56efb1de4eddc">
+      <attributes xmi:id="28089e69101458db1d28fc18e19fb87c" name="Emp_ID" type="INTEGER" length="0" scale="0" nullable="false">
+      </attributes>
+      <attributes xmi:id="ebf00a16ef5d1c31b3b76456e4662df0" name="Lname" type="VARCHAR" length="20" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="eb70ab39ac70e23786edf9446f67d831" name="Fname" type="VARCHAR" length="10" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="0a130d6d405eecd023d12d739a0911b2" name="Region" type="VARCHAR" length="2" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="798719109076ac427fde6a090e71aeea" name="Address1" type="VARCHAR" length="50" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="e49cd8fef126c0f9f51262482aed5f02" name="Address2" type="VARCHAR" length="50" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="7472ba857d6cbdf6a87739d9934a7159" name="City" type="VARCHAR" length="20" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="40f33e947bdae77793db766b513aa027" name="State" type="VARCHAR" length="10" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="b3c864ef6c3b3bd60c018b5bde79a72c" name="Zip" type="INTEGER" length="0" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="77e841f9be3561dbc654bfb5dc1ebd59" name="Country" type="VARCHAR" length="15" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:FilterNode" xmi:id="41c66fe084d2abe70c4b2a98eb68f6cc" name="Customer">
+    <annotations xmi:id="3c97b4232f569abebb8c27c5a3bf9340" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="dec7f7f2bfa4b17008d53fb138b00a67" key="sap.afm.displayName" value="Filter">
+    </annotations>
+    <annotations xmi:id="ff9d6012d34b98a1286cd985abcbb722" key="sap.afm.layout">
+      <annotations xmi:id="2bcd95644ac644cf247200f9d048abe4" key="x" value="232">
+      </annotations>
+      <annotations xmi:id="a75e6ce9fa2d5ad42a2f7ef268b8343f" key="y" value="60">
+      </annotations>
+      <annotations xmi:id="d40748ce4af8fc9306b581e6cd826ce9" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="c0d229bdbd31c4fb22295c76ecfa9b7a" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="3cd2b0a68f7143c9e9b527b91eb3464a" key="sap.afm.nodeType" value="FilterNode">
+    </annotations>
+    <annotations xmi:id="7d4e6757e0ee033281adb09e98b3bd87" key="sap.afm.nodeInputs">
+      <annotations xmi:id="cb737d66cea19da8bfa756083a5ad4c2" key="Customer_Input" value="CUSTOMER_Output"/>
+    </annotations>
+    <annotations xmi:id="ab72d762495fff764bc2ebfa30558827" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="97734404f2805bc27611fb351497d0fb" key="Customer_Output" value="Union1_input1"/>
+    </annotations>
+    <inputs name="Customer_Input" xmi:id="dd51aac80ecf4fce38f05837b0060702" kind="TABLE">
+      <attributes xmi:id="5b3a4cdf27f251680a9fb27cefe7e692" name="Cust_ID" type="VARCHAR" nullable="false" length="10" scale="0">
+      </attributes>
+      <attributes xmi:id="2661d9413b3313f75efc02d7259d04cf" name="Cust_classf" type="VARCHAR" nullable="true" length="2" scale="0">
+      </attributes>
+      <attributes xmi:id="7e9b7cfba5e7f81a719fdede5bfd69ec" name="Name1" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="e15195a71641479d82c636ae989cb229" name="Address" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="31c9a83584b9f62526644479781e6408" name="City" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="70195015c52bb25c6f50c89e799a2df3" name="Region_ID" type="VARCHAR" nullable="true" length="2" scale="0">
+      </attributes>
+      <attributes xmi:id="bef4f8dff51aa9014c917c5c35cb85a6" name="Zip" type="VARCHAR" nullable="true" length="10" scale="0">
+      </attributes>
+    </inputs>
+    <outputs name="Customer_Output" xmi:id="ca8a64c0791db4b2af9b06dd4fc06601" kind="TABLE">
+      <attributes xmi:id="b1e78d6e2f708f6cbbfeecbe929fdfb3" name="Name1" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="7d47d04a635d03a75cfe77d310fd546a" name="Address" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="82fe2bac64da1f5970a15731b0d6c799" name="City" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="8e74ee4488c9bf07972cd13079f982ac" name="Zip" type="VARCHAR" nullable="true" length="10" scale="0">
+      </attributes>
+      <attributes xmi:id="b100652298077bd8a53571685a9608a5" name="Type" type="VARCHAR" nullable="true" length="10" expression="&#x27;Customer&#x27;">
+      </attributes>
+    </outputs>
+    <tableMappings xmi:id="c53e342d2b95630d3c7f07cbd8624d9e" source="dd51aac80ecf4fce38f05837b0060702" target="ca8a64c0791db4b2af9b06dd4fc06601">
+      <attributeMappings source="7e9b7cfba5e7f81a719fdede5bfd69ec" target="b1e78d6e2f708f6cbbfeecbe929fdfb3" xmi:id="714cd23063e3b76ce432d25c869d52e2">
+      </attributeMappings>
+      <attributeMappings source="e15195a71641479d82c636ae989cb229" target="7d47d04a635d03a75cfe77d310fd546a" xmi:id="ccdcbcb423617fabf92c8c9193f515da">
+      </attributeMappings>
+      <attributeMappings source="31c9a83584b9f62526644479781e6408" target="82fe2bac64da1f5970a15731b0d6c799" xmi:id="360b37125cb03ecee130e956607e699e">
+      </attributeMappings>
+      <attributeMappings source="bef4f8dff51aa9014c917c5c35cb85a6" target="8e74ee4488c9bf07972cd13079f982ac" xmi:id="3fe3f7cdbc25180ece244599f9d5e23f">
+      </attributeMappings>
+    </tableMappings>
+  </nodes>
+  <nodes xsi:type="flowgraph:FilterNode" xmi:id="326ac82333279c675e5f2f7224fce915" name="Employee">
+    <annotations xmi:id="7ca4c2ad054f42d54bb44383cf642331" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="908a9f08ec43f35ced0186793cfd416c" key="sap.afm.displayName" value="Filter">
+    </annotations>
+    <annotations xmi:id="3d143ad9556795017bfcbd77a02e805f" key="sap.afm.layout">
+      <annotations xmi:id="b64b890aeca88c6f04ef7eca3bd62066" key="x" value="245">
+      </annotations>
+      <annotations xmi:id="388468a1eb527594bfc4c6c888b9c51a" key="y" value="171">
+      </annotations>
+      <annotations xmi:id="ce8a64a2dc208ba181c3312a77439b91" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="015a7218073e376d904771a237513fa0" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="216576f7a46227bce55f124db7d98565" key="sap.afm.nodeType" value="FilterNode">
+    </annotations>
+    <annotations xmi:id="5e75ab5637aec21b2468d64663a8cc2e" key="sap.afm.nodeInputs">
+      <annotations xmi:id="71b2807897feab231fb750c72ead5ac1" key="Employee_Input" value="EMPLOYEE_Output"/>
+    </annotations>
+    <annotations xmi:id="1b797bcab01edbfc93d893679d98e051" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="fd39ab28a2186775ad1eeb1555db2b9c" key="Employee_Output" value="Union1_input2"/>
+    </annotations>
+    <inputs name="Employee_Input" xmi:id="1e4e70c3794cfad1b7792e29036fc3ec" kind="TABLE">
+      <attributes xmi:id="9fb7d50bc4cda65d739778449917711a" name="Emp_ID" type="INTEGER" nullable="false" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="1451772265b143992941c8ed350d37b5" name="Lname" type="VARCHAR" nullable="true" length="20" scale="0">
+      </attributes>
+      <attributes xmi:id="009210195a44490793e5a6248cc4f617" name="Fname" type="VARCHAR" nullable="true" length="10" scale="0">
+      </attributes>
+      <attributes xmi:id="7997a67edc712ab8451a4833d39c7d17" name="Region" type="VARCHAR" nullable="true" length="2" scale="0">
+      </attributes>
+      <attributes xmi:id="ba026e4cd328781272b3db4e293ce823" name="Address1" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+      <attributes xmi:id="a1e86432ce2bf56a5502680f4f31cf24" name="Address2" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+      <attributes xmi:id="ca789c2810bd12896ba54fc661aff0ac" name="City" type="VARCHAR" nullable="true" length="20" scale="0">
+      </attributes>
+      <attributes xmi:id="e594ac1e41c822872b9dd26c6519f86c" name="State" type="VARCHAR" nullable="true" length="10" scale="0">
+      </attributes>
+      <attributes xmi:id="510728523132b2c6430ffb732be36ce9" name="Zip" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="b4a19d30cca4ab2f6d1f95de19fa6b7c" name="Country" type="VARCHAR" nullable="true" length="15" scale="0">
+      </attributes>
+    </inputs>
+    <outputs name="Employee_Output" xmi:id="52a6a070c4ac6ae2c3824bec58f59062" kind="TABLE">
+      <attributes xmi:id="cc1bbe60f1d2cf7bc424ea414b9b7dbe" name="Name1" type="VARCHAR" nullable="true" length="35" scale="" expression="&quot;Employee_Input&quot;.&quot;Fname&quot;||&#x27; &#x27;||&quot;Employee_Input&quot;.&quot;Lname&quot;">
+      </attributes>
+      <attributes xmi:id="9fd6a85de398affa4e7bcc0fc6076c06" name="Address" type="VARCHAR" nullable="true" length="35" scale="" expression="&quot;Employee_Input&quot;.&quot;Address1&quot;">
+      </attributes>
+      <attributes xmi:id="f85207eb9307145c641e32b769375d39" name="City" type="VARCHAR" nullable="true" length="35" scale="" expression="&quot;Employee_Input&quot;.&quot;City&quot;">
+      </attributes>
+      <attributes xmi:id="285e25b3aa4c8d829623f6af954b1fab" name="Zip" type="VARCHAR" nullable="true" length="10" scale="" expression="TO_VARCHAR(&quot;Employee_Input&quot;.&quot;Zip&quot;)">
+      </attributes>
+      <attributes xmi:id="3483bae101836c4cc42d32045a088d4a" name="Type" type="VARCHAR" nullable="true" length="10" expression="&#x27;Employee&#x27;">
+      </attributes>
+    </outputs>
+    <tableMappings xmi:id="aba07a01b759024059ec1ac320389dca" source="1e4e70c3794cfad1b7792e29036fc3ec" target="52a6a070c4ac6ae2c3824bec58f59062"/>
+  </nodes>
+  <nodes xsi:type="flowgraph:UnionNode" xmi:id="812eabaad58a5bc54d8e429fc58e71cd" name="Union1">
+    <annotations xmi:id="fac2826e9085a10e83ebb90984dbd1c8" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="5847017265edc4ab62ad993a2a70be88" key="sap.afm.displayName" value="Union">
+    </annotations>
+    <annotations xmi:id="9e32b3e21cc1dce876ff50bebb12002d" key="sap.afm.layout">
+      <annotations xmi:id="f914ab16adce2fffab2c16b4ee43316f" key="x" value="383">
+      </annotations>
+      <annotations xmi:id="c1a33cfdb8b2a597be9786481b6f307b" key="y" value="113">
+      </annotations>
+      <annotations xmi:id="da1a23deffcbd69d00a55dd99690d62a" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="c7a0f8c373eeffb8e2b10e68639dc35a" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="ceda8000471c39837291f26e45fc257b" key="sap.afm.nodeType" value="UnionNode">
+    </annotations>
+    <annotations xmi:id="fb75d3cee196751ce98e18f230db0567" key="sap.afm.nodeInputs">
+      <annotations xmi:id="694b5e3b8dea78cae1c2c1a6439c8c0f" key="Union1_input1" value="Customer_Output">
+      </annotations>
+      <annotations xmi:id="ca4c60bcf9a827cf2f5c687212fd8408" key="Union1_input2" value="Employee_Output">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="c4fcef3071f7e8ad414c9e3a0adc76d2" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="5952f2c5f8853e6f2ed4fcc84fe6b59c" key="Union1_Output" value="Union_Customer_Empoyee_Input"/>
+    </annotations>
+    <inputs xmi:id="99773d8955ad11569284eb20d1442aae" name="Union1_input1" kind="TABLE">
+      <attributes xmi:id="269fb3b45ed559395d1b5d3509c32ccc" name="Name1" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="7e04acd34345307832a797d4d65c1cce" name="Address" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="bee24f5cc369c6fc758ccd47f3429d68" name="City" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="664ccb9493943b42a195449df25544f8" name="Zip" type="VARCHAR" nullable="true" length="10" scale="0">
+      </attributes>
+      <attributes xmi:id="305d8022b4f4b6309c4760e4dcf7a6ec" name="Type" type="VARCHAR" nullable="true" length="10">
+      </attributes>
+    </inputs>
+    <inputs xmi:id="2fa225b655b545009bfc1925d3bcd112" name="Union1_input2" kind="TABLE">
+      <attributes xmi:id="73f97c9fd60227743b485529aa8bb465" name="Name1" type="VARCHAR" nullable="true" length="35">
+      </attributes>
+      <attributes xmi:id="fb69c8fbaabf7f6434c7d5674e83a3dd" name="Address" type="VARCHAR" nullable="true" length="35">
+      </attributes>
+      <attributes xmi:id="2bd0abb340645a16693d9210e95041ac" name="City" type="VARCHAR" nullable="true" length="35">
+      </attributes>
+      <attributes xmi:id="9df80bd54dd91c8cb15056abcce43ab3" name="Zip" type="VARCHAR" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="4a29468d4baa3cfcd46e59f99b3549c7" name="Type" type="VARCHAR" nullable="true" length="10">
+      </attributes>
+    </inputs>
+    <outputs name="Union1_Output" xmi:id="32c7fa8964df593e1a97ad66d880e91f" kind="TABLE">
+      <attributes xmi:id="7469c8f5f5fa269627efb7f3e21fca66" name="Name1" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="d041d0851627518d9fbbc12bfc3b1321" name="Address" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="f65428ee487b78dac552e71fcc861c39" name="City" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="05190343c95c83ccd247578ff76584a8" name="Zip" type="VARCHAR" nullable="true" length="10" scale="0">
+      </attributes>
+      <attributes xmi:id="a75c1e938b7b5bfad612561aa8369ae5" name="Type" type="VARCHAR" nullable="true" length="10">
+      </attributes>
+    </outputs>
+    <unionAll>true</unionAll>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="cf3b18bef4ba33ab102b3d07682b0065" name="Union_Customer_Empoyee" type="TEMPLATE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="Union_Customer_Empoyee" dataLayout="COLUMN" truncateTable="true">
+    <annotations xmi:id="b80e1ce87fab534d46d762a584894386" key="sap.afm.layout">
+      <annotations xmi:id="9184045be87d3ada5bedc3cdf0817438" key="x" value="613">
+      </annotations>
+      <annotations xmi:id="90af30290790601cfb00408e2e25775a" key="y" value="113">
+      </annotations>
+      <annotations xmi:id="9cbb040e162393567ee5d80a3997b116" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="0830916d76cd62201e511b40ba37d30d" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="68300d48526fbd95367b922d33d04bbc" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="5fa93955a873df6c741822cbbaa14756" key="sap.afm.nodeInputs">
+      <annotations xmi:id="aca0c81414756b2a148c1066dfdf2cd9" key="Union_Customer_Empoyee_Input" value="Union1_Output"/>
+    </annotations>
+    <annotations xmi:id="f016667ecd9cd7287255a1c7cb2d79d3" key="sap.afm.nodeOutputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="f0178e2f24edf8d92513c8be6f77e8c8" key="sap.im.historyTable" value="">
+    </annotations>
+    <inputs name="Union_Customer_Empoyee_Input" kind="TABLE" xmi:id="8396f8f9a2130b81be519aeb04dfd380">
+      <attributes xmi:id="c112422e562a66a41f5e5a2b8946725c" name="Name1" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="cb651451093badb4a6b9e34de698cc10" name="Address" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="ecdb39e9ef009346f455836620890316" name="City" type="VARCHAR" nullable="true" length="35" scale="0">
+      </attributes>
+      <attributes xmi:id="d2fdf7279aae247a706051d257ca0e91" name="Zip" type="VARCHAR" nullable="true" length="10" scale="0">
+      </attributes>
+      <attributes xmi:id="f092f097a25ef3bfefb6fb61cbc4bafb" name="Type" type="VARCHAR" nullable="true" length="10">
+      </attributes>
+    </inputs>
+  </nodes>
+  <tableMappings xmi:id="d185289267383878ad94b9f1d9b1ff43" source="b1c85d88f24096cd9fa5175fba242bde" target="dd51aac80ecf4fce38f05837b0060702">
+    <attributeMappings source="d21ff35ab54acd2cb8e22b2517df0134" target="5b3a4cdf27f251680a9fb27cefe7e692" xmi:id="48336a73f746de0b6d92016b7071ae7f">
+    </attributeMappings>
+    <attributeMappings source="be211844b9b5502c884ed1a386e9e8aa" target="2661d9413b3313f75efc02d7259d04cf" xmi:id="6578f88ad966a05c2fd0cdb98f2d48d9">
+    </attributeMappings>
+    <attributeMappings source="485a22faaf9d7f0be34b701a1a66d22c" target="7e9b7cfba5e7f81a719fdede5bfd69ec" xmi:id="045c5229736f18ae2399be46f3931c8e">
+    </attributeMappings>
+    <attributeMappings source="af41daffb537c9dcbe3c02eb34642eac" target="e15195a71641479d82c636ae989cb229" xmi:id="afd891a3b0ca851e2f0dc58fae03acd8">
+    </attributeMappings>
+    <attributeMappings source="0f74696a38e991d3a79e937bb114e356" target="31c9a83584b9f62526644479781e6408" xmi:id="85b56231f84b1d0ab4320e092c34baf2">
+    </attributeMappings>
+    <attributeMappings source="d74f1cc1ca3fb50df456fc99c5f8d9e6" target="70195015c52bb25c6f50c89e799a2df3" xmi:id="db27c1c11c7d4747f397b74247c0b80b">
+    </attributeMappings>
+    <attributeMappings source="cc11ec415610c3f96a87ca57db6221c6" target="bef4f8dff51aa9014c917c5c35cb85a6" xmi:id="057c13476b7dc6155ff93ef177dc9644">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="6100166e2c407c20118febf3678390a4" source="37a7e3122b8e6253caa56efb1de4eddc" target="1e4e70c3794cfad1b7792e29036fc3ec">
+    <attributeMappings source="28089e69101458db1d28fc18e19fb87c" target="9fb7d50bc4cda65d739778449917711a" xmi:id="6f0eb844164e28e8da7c11e2c7e2ff3c">
+    </attributeMappings>
+    <attributeMappings source="ebf00a16ef5d1c31b3b76456e4662df0" target="1451772265b143992941c8ed350d37b5" xmi:id="78b08d9bfacde27beeb112766edc3426">
+    </attributeMappings>
+    <attributeMappings source="eb70ab39ac70e23786edf9446f67d831" target="009210195a44490793e5a6248cc4f617" xmi:id="b5f289aedfd9ffa2ce33acd0d5722ce2">
+    </attributeMappings>
+    <attributeMappings source="0a130d6d405eecd023d12d739a0911b2" target="7997a67edc712ab8451a4833d39c7d17" xmi:id="1483c8582c53bd03303c764336828c0a">
+    </attributeMappings>
+    <attributeMappings source="798719109076ac427fde6a090e71aeea" target="ba026e4cd328781272b3db4e293ce823" xmi:id="141dbc81500e4d0d12df1b28f32fe78b">
+    </attributeMappings>
+    <attributeMappings source="e49cd8fef126c0f9f51262482aed5f02" target="a1e86432ce2bf56a5502680f4f31cf24" xmi:id="1eac31363ca10c6f2bccc1c8be5995c7">
+    </attributeMappings>
+    <attributeMappings source="7472ba857d6cbdf6a87739d9934a7159" target="ca789c2810bd12896ba54fc661aff0ac" xmi:id="37fdc390ee771ea7c1e92fabcb2f018a">
+    </attributeMappings>
+    <attributeMappings source="40f33e947bdae77793db766b513aa027" target="e594ac1e41c822872b9dd26c6519f86c" xmi:id="38c23f573514a0181be19d307fc34e09">
+    </attributeMappings>
+    <attributeMappings source="b3c864ef6c3b3bd60c018b5bde79a72c" target="510728523132b2c6430ffb732be36ce9" xmi:id="c3263c73c83c72095ba4cb272676db2c">
+    </attributeMappings>
+    <attributeMappings source="77e841f9be3561dbc654bfb5dc1ebd59" target="b4a19d30cca4ab2f6d1f95de19fa6b7c" xmi:id="7a34192bddda73a42227718c2b63f390">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="51f0cea772748f3fe47bd9fe8ae7a790" source="ca8a64c0791db4b2af9b06dd4fc06601" target="99773d8955ad11569284eb20d1442aae">
+    <attributeMappings source="b1e78d6e2f708f6cbbfeecbe929fdfb3" target="269fb3b45ed559395d1b5d3509c32ccc" xmi:id="650deb0f2d2f80a21a9744710df3ac22">
+    </attributeMappings>
+    <attributeMappings source="7d47d04a635d03a75cfe77d310fd546a" target="7e04acd34345307832a797d4d65c1cce" xmi:id="5a438b925c197e3de6c068a2626fef94">
+    </attributeMappings>
+    <attributeMappings source="82fe2bac64da1f5970a15731b0d6c799" target="bee24f5cc369c6fc758ccd47f3429d68" xmi:id="c35f8d66e08b8947c01e84e4068f3223">
+    </attributeMappings>
+    <attributeMappings source="8e74ee4488c9bf07972cd13079f982ac" target="664ccb9493943b42a195449df25544f8" xmi:id="24744fa6383885b9137dcf8b9dec1f92">
+    </attributeMappings>
+    <attributeMappings source="b100652298077bd8a53571685a9608a5" target="305d8022b4f4b6309c4760e4dcf7a6ec" xmi:id="2b8ae1aa9f08721d49f8f87fe2885247">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="2ecfa358dc4f35541baf991ee046eeb8" source="52a6a070c4ac6ae2c3824bec58f59062" target="2fa225b655b545009bfc1925d3bcd112">
+    <attributeMappings source="cc1bbe60f1d2cf7bc424ea414b9b7dbe" target="73f97c9fd60227743b485529aa8bb465" xmi:id="9b694666b50fb704f6f43a7b9f6a010a">
+    </attributeMappings>
+    <attributeMappings source="9fd6a85de398affa4e7bcc0fc6076c06" target="fb69c8fbaabf7f6434c7d5674e83a3dd" xmi:id="02344d35b4ead9a9ad3a31f073a5c894">
+    </attributeMappings>
+    <attributeMappings source="f85207eb9307145c641e32b769375d39" target="2bd0abb340645a16693d9210e95041ac" xmi:id="611b09327cecb82e130d43816c5cdba0">
+    </attributeMappings>
+    <attributeMappings source="285e25b3aa4c8d829623f6af954b1fab" target="9df80bd54dd91c8cb15056abcce43ab3" xmi:id="6e3f5d3c02c819b6f0ee489ce0df00a2">
+    </attributeMappings>
+    <attributeMappings source="3483bae101836c4cc42d32045a088d4a" target="4a29468d4baa3cfcd46e59f99b3549c7" xmi:id="8e75a0b7843163d691d97f3f66f0a64d">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="ba40c0936c983d20f410b4d1494a65b3" source="32c7fa8964df593e1a97ad66d880e91f" target="8396f8f9a2130b81be519aeb04dfd380">
+    <attributeMappings source="7469c8f5f5fa269627efb7f3e21fca66" target="c112422e562a66a41f5e5a2b8946725c" xmi:id="d87c12e7e42cda6eeec32877670b9fa2">
+    </attributeMappings>
+    <attributeMappings source="d041d0851627518d9fbbc12bfc3b1321" target="cb651451093badb4a6b9e34de698cc10" xmi:id="7f94fe7f4385f14f6fa9a82e79899354">
+    </attributeMappings>
+    <attributeMappings source="f65428ee487b78dac552e71fcc861c39" target="ecdb39e9ef009346f455836620890316" xmi:id="bbcd2aed49b5998ed700bf154a2c2c73">
+    </attributeMappings>
+    <attributeMappings source="05190343c95c83ccd247578ff76584a8" target="d2fdf7279aae247a706051d257ca0e91" xmi:id="44807d63a98ee5138df0694835a410d0">
+    </attributeMappings>
+    <attributeMappings source="a75c1e938b7b5bfad612561aa8369ae5" target="f092f097a25ef3bfefb6fb61cbc4bafb" xmi:id="fb78a7fe2bf63095e32fa716a7640d84">
+    </attributeMappings>
+  </tableMappings>
+</flowgraph:ContainerNode>

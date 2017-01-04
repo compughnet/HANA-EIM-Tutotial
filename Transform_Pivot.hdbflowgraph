@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:version="2.0" xmi:id="79b68b8bd73b60e0cf3dc09ac8fc5f12" name="Transform_Pivot" runtimeBehavior="BATCH_TASK" targetSchema="EIM_DEMO">
+  <annotations xmi:id="c5290a72ddd2a8a8d66b9e981769b2ee" key="sap.afm.layout">
+    <annotations xmi:id="9d2c5f461c4e923b523e83815a5af203" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="d48e60167575d39ab0a32202c0dbc771" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="ed2264cfd781175f5c49d41839fb6826" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="bf8f7615734139ab2cdc374184ddce5d" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="e8b303c93c400da190b96c48344aa1b8" key="sap.afm.palette">
+    <annotations xmi:id="2fb75b6e84b4f5f49d4f878e058b8cf1" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="71f7df5abc3e8bb82ed46be7b2322e33" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="30ffe8facc4c5136e4c38f0823f2c6b2" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="c145d7a4464b580298496146e02d60ad" key="sap.afm.nodeOutputs">
+    <annotations/>
+  </annotations>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="419df9cfb6854b3607db9f9040d4c374" name="Products" type="TEMPLATE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="Products" dataLayout="COLUMN" truncateTable="true">
+    <annotations xmi:id="cb0272c959809c9b012b8fd75fc09888" key="sap.afm.layout">
+      <annotations xmi:id="e937cf34882b1b32ff60c38fa5c323ab" key="x" value="628">
+      </annotations>
+      <annotations xmi:id="77e915dd8bf9cb0a6f24645a48f964da" key="y" value="200">
+      </annotations>
+      <annotations xmi:id="f29a886c4c9ad0d33a07029de89265a7" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="ba52d0941ee5f3e04547476ac78ee831" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="b8b9bb62642bbc3f9df86493ae3b7c28" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="636c8ec5aceaebcbc02715ed946e0b29" key="sap.afm.nodeInputs">
+      <annotations xmi:id="18505e5297f15b128cc7072d9ecf9e09" key="Products_Input" value="Pivot2_Output"/>
+    </annotations>
+    <annotations xmi:id="4a3619ff33460f32272a1f79342dfa18" key="sap.afm.nodeOutputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="0fbc0adf4043ab544156daed3b73bbb7" key="sap.im.historyTable" value="">
+    </annotations>
+    <inputs name="Products_Input" kind="TABLE" xmi:id="6b2472a568e6b315238f3802d16d0b80">
+      <attributes xmi:id="6609c1119fe88695cbd950bf7c6a15f6" name="PRODUCTID" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="8ed4641aeb493f0d132520a7d73177f4" name="Height_PROPVALUE" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="f64f9ffcfae8e8e6791ad1ff2e76b2ce" name="Weight_PROPVALUE" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="68013bf01a0e1491860112af7b575e5a" name="Color_PROPVALUE" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+    </inputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="ad2d329be9b6c902089e6f69e5744c8b" name="PRODUCTPROPERTIES" type="DATABASE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="PRODUCTPROPERTIES" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="7374382da59230bddbf2d28a0a6c8e1c" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="cf26a7b5f891434dbd691a4743c34da6" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="5f9ac13a5d1c91cb640821ff66dc9ef8" key="sap.afm.layout">
+      <annotations xmi:id="64266fd52cccc6361cf636355ff96c11" key="x" value="147">
+      </annotations>
+      <annotations xmi:id="57100c25406eac954b8695df8eef6c9a" key="y" value="75">
+      </annotations>
+      <annotations xmi:id="f4295836d13c5713ed72d4dc88d93844" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="1ee50d062b53b03b9371b2392523149e" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="20542bd70a411825230180076f9ea1a4" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="ad4039168592a99d4916b15f2311b654" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="fbaacb65b66cd35c7b48e0b2b7fc678c" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="b20058bb82ca96e2902d962cc7a708e3" key="PRODUCTPROPERTIES_Output" value="Sort2_Input"/>
+    </annotations>
+    <outputs name="PRODUCTPROPERTIES_Output" kind="TABLE" xmi:id="5e09ff92be51236925cbbc375609ccb7">
+      <attributes xmi:id="9f8ff8542a7a1da2c64863b5606af1b8" name="PRODUCTID" type="INTEGER" length="0" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="50b50335f851f25a67cdbd3b412ff0b0" name="PROPERTY" type="VARCHAR" length="50" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="43096e5cd282c1ffebf641c25e5e31fc" name="PROPVALUE" type="INTEGER" length="0" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:SortNode" xmi:id="50da141a7cfca9a2db015995e6ce84da" name="Sort2" sortAttributes="30eb79242f72ecf59dba14c787435dab">
+    <annotations xmi:id="77a03d9edd0f471d238547d8e59d7e0e" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="3ca046e80b7b3d43e07791294ca97907" key="sap.afm.displayName" value="Sort">
+    </annotations>
+    <annotations xmi:id="f3410eff5731d9785a3a5d550027c72b" key="sap.afm.layout">
+      <annotations xmi:id="3c7913a7a833b0f54a84c85dc44b0a01" key="x" value="255">
+      </annotations>
+      <annotations xmi:id="0e7b144d309017bb339d6c0db60986e9" key="y" value="92">
+      </annotations>
+      <annotations xmi:id="8fa70aea26ffca6134ae540e52e9bf3e" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="d31b78ac63b1c7695e967fa22fa1e1bf" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="4f7c19227a4f9f6626ee9bada2754357" key="sap.afm.nodeType" value="SortNode">
+    </annotations>
+    <annotations xmi:id="98ea6db44a069242e7adea19f4c0fc8b" key="sap.afm.nodeInputs">
+      <annotations xmi:id="15fab98ac663a44cd2f80a7627c74d3f" key="Sort2_Input" value="PRODUCTPROPERTIES_Output"/>
+    </annotations>
+    <annotations xmi:id="cea425731d44024aa20105f36bcaa456" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="b850850006158389d8e5ddb33d8c459b" key="Sort2" value="Pivot2_Input"/>
+    </annotations>
+    <outputs name="Sort2" kind="TABLE" xmi:id="a252322d22414043639e2b8f104bf045">
+      <attributes xmi:id="bf3b90a2b30e8bfcd52142b36f10c36b" name="PRODUCTID" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="049ac032102ddec370634eb4b9b74fe6" name="PROPERTY" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+      <attributes xmi:id="d2860141d4c94b7a7bccd71a6b7ee0af" name="PROPVALUE" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+    </outputs>
+    <inputs name="Sort2_Input" xmi:id="2153b9e3daa76a24bc3510e392d2a84e" kind="TABLE">
+      <attributes xmi:id="30eb79242f72ecf59dba14c787435dab" name="PRODUCTID" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="75cb058758f1236a4eb34bb5bf1c3a05" name="PROPERTY" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+      <attributes xmi:id="304c5070f453131195b9789be0fcc15a" name="PROPVALUE" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+    </inputs>
+    <tableMappings xmi:id="1074ffb9f2854d512002dba3e6fff339" source="2153b9e3daa76a24bc3510e392d2a84e" target="a252322d22414043639e2b8f104bf045">
+      <attributeMappings source="30eb79242f72ecf59dba14c787435dab" target="bf3b90a2b30e8bfcd52142b36f10c36b" xmi:id="95d96977163204bd28fd921edcacd974">
+      </attributeMappings>
+      <attributeMappings source="75cb058758f1236a4eb34bb5bf1c3a05" target="049ac032102ddec370634eb4b9b74fe6" xmi:id="077f8621840ca9c41ffdb71b64495b4f">
+      </attributeMappings>
+      <attributeMappings source="304c5070f453131195b9789be0fcc15a" target="d2860141d4c94b7a7bccd71a6b7ee0af" xmi:id="ef3ab19af571321cacc0f633833b1d02">
+      </attributeMappings>
+    </tableMappings>
+    <sortOrders>ASCENDING</sortOrders>
+  </nodes>
+  <nodes xsi:type="flowgraph:PivotNode" xmi:id="a2052e5f024949fc3ca8e2d70fa1eb7b" name="Pivot2" axisAttribute="02cf197284182e39613eec23f119d459" keyAttributes="183f7a27b46005b2f3b1ce8294f5bd26" pivotAttributes="adc0c1789dc69b013b5f5ffcb19e8b5f">
+    <annotations xmi:id="777d96158c92ce74990a36e9516a6373" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="9b8d71d208602159ec0ee529e7416cc7" key="sap.afm.displayName" value="Pivot">
+    </annotations>
+    <annotations xmi:id="bf6d9019e9329ab5d30b00d52b769aeb" key="sap.afm.layout">
+      <annotations xmi:id="2dad970aa5e3772d8b540a914ef78367" key="x" value="441">
+      </annotations>
+      <annotations xmi:id="9269f56bf42df8c42d6abcabb53fef98" key="y" value="184">
+      </annotations>
+      <annotations xmi:id="64c7d85b48a90ca26401a5a35cbe91ae" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="0d9975beb479d21b0e6b305384f61854" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="7ed8bde9363d691df3cebd2515491b84" key="sap.afm.nodeType" value="PivotNode">
+    </annotations>
+    <annotations xmi:id="7546623bda5b68c386ee57705522229f" key="sap.afm.nodeInputs">
+      <annotations xmi:id="57c5aca77c789ea97a81c1115e69cc7d" key="Pivot2_Input" value="Sort2"/>
+    </annotations>
+    <annotations xmi:id="0ae228e82da80c1ae67c187e7c93056e" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="07fdc727edfda365a2dc3ab8969d9ed8" key="Pivot2_Output" value="Products_Input"/>
+    </annotations>
+    <annotations xmi:id="440b1b6c4dc0f7ab9105cf3e84b76910" key="sap.im.pivotDuplicateValue" value="firstRow">
+    </annotations>
+    <inputs name="Pivot2_Input" xmi:id="50b1394d306fa7037120e5a11bfbbb57" kind="TABLE">
+      <attributes xmi:id="183f7a27b46005b2f3b1ce8294f5bd26" name="PRODUCTID" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="02cf197284182e39613eec23f119d459" name="PROPERTY" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+      <attributes xmi:id="adc0c1789dc69b013b5f5ffcb19e8b5f" name="PROPVALUE" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+    </inputs>
+    <outputs name="Pivot2_Output" xmi:id="58cfec1a717c10f3f494d505e019c970">
+      <attributes xmi:id="82d16d1bd4c83c579256f922f2c1af40" name="PRODUCTID" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="de8ce7eb8805630475b2966f59b770e0" name="Height_PROPVALUE" type="INTEGER" nullable="true" length="0" scale="0" mappedName="Height_PROPVALUE">
+      </attributes>
+      <attributes xmi:id="aeaa0a0cb52799323916a919472bb5ec" name="Weight_PROPVALUE" type="INTEGER" nullable="true" length="0" scale="0" mappedName="Weight_PROPVALUE">
+      </attributes>
+      <attributes xmi:id="881b1889dbfed091c2a6dd0d17f8481b" name="Color_PROPVALUE" type="INTEGER" nullable="true" length="0" scale="0" mappedName="Color_PROPVALUE">
+      </attributes>
+    </outputs>
+    <values>Height</values>
+    <values>Weight</values>
+    <values>Color</values>
+    <attributePrefixes>Height</attributePrefixes>
+    <attributePrefixes>Weight</attributePrefixes>
+    <attributePrefixes>Color</attributePrefixes>
+    <tableMappings xmi:id="f7fe072e54fc4616c4bb9c6d1d62f03c" source="50b1394d306fa7037120e5a11bfbbb57" target="58cfec1a717c10f3f494d505e019c970">
+      <attributeMappings xmi:id="afd4d7c45a1c30ecd9b831e735233956" source="183f7a27b46005b2f3b1ce8294f5bd26" target="82d16d1bd4c83c579256f922f2c1af40"/>
+    </tableMappings>
+  </nodes>
+  <tableMappings xmi:id="9be6eeaad243c9cca90ed3743e139377" source="5e09ff92be51236925cbbc375609ccb7" target="2153b9e3daa76a24bc3510e392d2a84e">
+    <attributeMappings source="9f8ff8542a7a1da2c64863b5606af1b8" target="30eb79242f72ecf59dba14c787435dab" xmi:id="a8496723ec746018db9d5a991aa30a1c">
+    </attributeMappings>
+    <attributeMappings source="50b50335f851f25a67cdbd3b412ff0b0" target="75cb058758f1236a4eb34bb5bf1c3a05" xmi:id="3160f4ddda2219a0a5b60ed565ac7ce5">
+    </attributeMappings>
+    <attributeMappings source="43096e5cd282c1ffebf641c25e5e31fc" target="304c5070f453131195b9789be0fcc15a" xmi:id="f1b13fc8c2116835c7db68ba352e9eb1">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="e91e657d7be8d33255ba347c3724ecef" source="a252322d22414043639e2b8f104bf045" target="50b1394d306fa7037120e5a11bfbbb57">
+    <attributeMappings source="bf3b90a2b30e8bfcd52142b36f10c36b" target="183f7a27b46005b2f3b1ce8294f5bd26" xmi:id="8738e84cfd824d04046f631dde9fb8d9">
+    </attributeMappings>
+    <attributeMappings source="049ac032102ddec370634eb4b9b74fe6" target="02cf197284182e39613eec23f119d459" xmi:id="e3d6cdb661d4f1b8a32ba9673487d0a9">
+    </attributeMappings>
+    <attributeMappings source="d2860141d4c94b7a7bccd71a6b7ee0af" target="adc0c1789dc69b013b5f5ffcb19e8b5f" xmi:id="0c8d1f002c38c26ffb0ff7f390f2bbae">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="78c84d7dc91f3cbe2c3a428de751a2ed" source="58cfec1a717c10f3f494d505e019c970" target="6b2472a568e6b315238f3802d16d0b80">
+    <attributeMappings source="82d16d1bd4c83c579256f922f2c1af40" target="6609c1119fe88695cbd950bf7c6a15f6" xmi:id="e78ef4e02888fc6d351d578b25633756">
+    </attributeMappings>
+    <attributeMappings source="de8ce7eb8805630475b2966f59b770e0" target="8ed4641aeb493f0d132520a7d73177f4" xmi:id="7560114beeb7b108d678e211ea0f2f7a">
+    </attributeMappings>
+    <attributeMappings source="aeaa0a0cb52799323916a919472bb5ec" target="f64f9ffcfae8e8e6791ad1ff2e76b2ce" xmi:id="1e4727ba6686b54b31c945cbdc009de3">
+    </attributeMappings>
+    <attributeMappings source="881b1889dbfed091c2a6dd0d17f8481b" target="68013bf01a0e1491860112af7b575e5a" xmi:id="fd09fbcb23aae02ac681dd018d058f10">
+    </attributeMappings>
+  </tableMappings>
+</flowgraph:ContainerNode>

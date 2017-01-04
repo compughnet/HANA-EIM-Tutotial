@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:version="2.0" xmi:id="_QxVOkLfxEea0-M9ZRBNjOA" name="TRANSFORM_PIVOT" generateProcedure="false" generateTask="true" targetSchema="EIM_DEMO">
+  <annotations xmi:id="_QxVOkbfxEea0-M9ZRBNjOA" key="sap.afm.layout">
+    <annotations xmi:id="_QxVOkrfxEea0-M9ZRBNjOA" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="_QxVOk7fxEea0-M9ZRBNjOA" key="y" value="10">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="_QxVOlLfxEea0-M9ZRBNjOA" key="sap.afm.palette" value="">
+    <annotations xmi:id="_QxVOlbfxEea0-M9ZRBNjOA" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="_WyLWsLfxEea0-M9ZRBNjOA" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="_WyLWsbfxEea0-M9ZRBNjOA" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="_WyL9wLfxEea0-M9ZRBNjOA" key="sap.afm.nodeOutputs">
+    <annotations/>
+  </annotations>
+  <tableMappings xmi:id="_6j9AcLh_Eea0-M9ZRBNjOA" source="_5TpPKLh_Eea0-M9ZRBNjOA" target="_6J2eaLh_Eea0-M9ZRBNjOA">
+    <attributeMappings xmi:id="_6j9Acbh_Eea0-M9ZRBNjOA" source="_5TpPKbh_Eea0-M9ZRBNjOA" target="_6j4vALh_Eea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_6j9Acrh_Eea0-M9ZRBNjOA" source="_5TpPKrh_Eea0-M9ZRBNjOA" target="_6j5WELh_Eea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_6j9Ac7h_Eea0-M9ZRBNjOA" source="_5TpPK7h_Eea0-M9ZRBNjOA" target="_6j5WEbh_Eea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_6j9AdLh_Eea0-M9ZRBNjOA" source="_5TpPLLh_Eea0-M9ZRBNjOA" target="_6j5WErh_Eea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_6j9Adbh_Eea0-M9ZRBNjOA" source="_5TpPLbh_Eea0-M9ZRBNjOA" target="_6j5WE7h_Eea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_6j9Adrh_Eea0-M9ZRBNjOA" source="_5TpPLrh_Eea0-M9ZRBNjOA" target="_6j6kMLh_Eea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_6j9Ad7h_Eea0-M9ZRBNjOA" source="_5TpPL7h_Eea0-M9ZRBNjOA" target="_6j6kMbh_Eea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_6j9AeLh_Eea0-M9ZRBNjOA" source="_5TpPMLh_Eea0-M9ZRBNjOA" target="_6j6kMrh_Eea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_6j9Aebh_Eea0-M9ZRBNjOA" source="_5TpPMbh_Eea0-M9ZRBNjOA" target="_6j6kM7h_Eea0-M9ZRBNjOA">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="_KDWtsLiAEea0-M9ZRBNjOA" source="_6J2eabh_Eea0-M9ZRBNjOA" target="_JuVf-LiAEea0-M9ZRBNjOA">
+    <attributeMappings xmi:id="_KDWtsbiAEea0-M9ZRBNjOA" source="_6J2earh_Eea0-M9ZRBNjOA" target="_KDWGoLiAEea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_KDWtsriAEea0-M9ZRBNjOA" source="_BESg8LiAEea0-M9ZRBNjOA" target="_KDWGobiAEea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_KDWts7iAEea0-M9ZRBNjOA" source="_6J2ea7h_Eea0-M9ZRBNjOA" target="_KDWGoriAEea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_KDWttLiAEea0-M9ZRBNjOA" source="_6J2ebLh_Eea0-M9ZRBNjOA" target="_KDWGo7iAEea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_KDWttbiAEea0-M9ZRBNjOA" source="_F1-uUbiAEea0-M9ZRBNjOA" target="_KDWGpLiAEea0-M9ZRBNjOA">
+    </attributeMappings>
+    <attributeMappings xmi:id="_KDWttriAEea0-M9ZRBNjOA" source="_F1-uUriAEea0-M9ZRBNjOA" target="_KDWGpbiAEea0-M9ZRBNjOA">
+    </attributeMappings>
+  </tableMappings>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="_5TpPILh_Eea0-M9ZRBNjOA" name="REGIONSALESCOST" type="DATABASE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="REGIONSALESCOST" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="_5TpPIbh_Eea0-M9ZRBNjOA" key="sap.afm.description" value="Read data from a catalog or repository object">
+    </annotations>
+    <annotations xmi:id="_5TpPIrh_Eea0-M9ZRBNjOA" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="_5TpPI7h_Eea0-M9ZRBNjOA" key="sap.afm.layout">
+      <annotations xmi:id="_5TpPJLh_Eea0-M9ZRBNjOA" key="x" value="136">
+      </annotations>
+      <annotations xmi:id="_5TpPJbh_Eea0-M9ZRBNjOA" key="y" value="63">
+      </annotations>
+      <annotations xmi:id="_5TpPJrh_Eea0-M9ZRBNjOA" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="_5TpPJ7h_Eea0-M9ZRBNjOA" key="height" value="64">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="_UBsmILiAEea0-M9ZRBNjOA" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="_UBsmIbiAEea0-M9ZRBNjOA" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="_UBsmIriAEea0-M9ZRBNjOA" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="_UBw3kLiAEea0-M9ZRBNjOA" key="DATA" value="INPUT"/>
+    </annotations>
+    <outputs xmi:id="_5TpPKLh_Eea0-M9ZRBNjOA" name="DATA" kind="TABLE">
+      <attributes xmi:id="_5TpPKbh_Eea0-M9ZRBNjOA" name="Region" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+      <attributes xmi:id="_5TpPKrh_Eea0-M9ZRBNjOA" name="Sales_Q1" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_5TpPK7h_Eea0-M9ZRBNjOA" name="Sales_Q2" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_5TpPLLh_Eea0-M9ZRBNjOA" name="Sales_Q3" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_5TpPLbh_Eea0-M9ZRBNjOA" name="Sales_Q4" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_5TpPLrh_Eea0-M9ZRBNjOA" name="Cost_Q1" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_5TpPL7h_Eea0-M9ZRBNjOA" name="Cost_Q2" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_5TpPMLh_Eea0-M9ZRBNjOA" name="Cost_Q3" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_5TpPMbh_Eea0-M9ZRBNjOA" name="Cost_Q4" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:UnPivotNode" xmi:id="_6J2eYLh_Eea0-M9ZRBNjOA" name="UNPIVOT" sequenceAttribute="_6J2earh_Eea0-M9ZRBNjOA">
+    <annotations xmi:id="_6J2eYbh_Eea0-M9ZRBNjOA" key="sap.afm.displayName" value="Unpivot">
+    </annotations>
+    <annotations xmi:id="_6J2eYrh_Eea0-M9ZRBNjOA" key="sap.afm.description" value="Rotates the values in specified columns to rows">
+    </annotations>
+    <annotations xmi:id="_6J2eY7h_Eea0-M9ZRBNjOA" key="sap.afm.layout">
+      <annotations xmi:id="_6J2eZLh_Eea0-M9ZRBNjOA" key="x" value="317">
+      </annotations>
+      <annotations xmi:id="_6J2eZbh_Eea0-M9ZRBNjOA" key="y" value="103">
+      </annotations>
+      <annotations xmi:id="_6J2eZrh_Eea0-M9ZRBNjOA" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="_6J2eZ7h_Eea0-M9ZRBNjOA" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="_UBw3kbiAEea0-M9ZRBNjOA" key="sap.afm.nodeType" value="UnPivotNode">
+    </annotations>
+    <annotations xmi:id="_UBw3kriAEea0-M9ZRBNjOA" key="sap.afm.nodeInputs">
+      <annotations xmi:id="_UBz64LiAEea0-M9ZRBNjOA" key="INPUT" value="DATA"/>
+    </annotations>
+    <annotations xmi:id="_UBz64biAEea0-M9ZRBNjOA" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="_UBz64riAEea0-M9ZRBNjOA" key="OUTPUT" value="DATA_2"/>
+    </annotations>
+    <inputs xmi:id="_6J2eaLh_Eea0-M9ZRBNjOA" name="INPUT" kind="TABLE">
+      <attributes xmi:id="_6j4vALh_Eea0-M9ZRBNjOA" name="Region" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+      <attributes xmi:id="_6j5WELh_Eea0-M9ZRBNjOA" name="Sales_Q1" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_6j5WEbh_Eea0-M9ZRBNjOA" name="Sales_Q2" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_6j5WErh_Eea0-M9ZRBNjOA" name="Sales_Q3" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_6j5WE7h_Eea0-M9ZRBNjOA" name="Sales_Q4" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_6j6kMLh_Eea0-M9ZRBNjOA" name="Cost_Q1" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_6j6kMbh_Eea0-M9ZRBNjOA" name="Cost_Q2" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_6j6kMrh_Eea0-M9ZRBNjOA" name="Cost_Q3" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_6j6kM7h_Eea0-M9ZRBNjOA" name="Cost_Q4" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+    </inputs>
+    <outputs xmi:id="_6J2eabh_Eea0-M9ZRBNjOA" name="OUTPUT" kind="TABLE">
+      <attributes xmi:id="_6J2earh_Eea0-M9ZRBNjOA" name="Quarter" type="INTEGER" nullable="false" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_BESg8LiAEea0-M9ZRBNjOA" name="Region" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+      <attributes xmi:id="_6J2ea7h_Eea0-M9ZRBNjOA" name="Sales_HDR" type="VARCHAR" nullable="false" length="127" scale="0">
+      </attributes>
+      <attributes xmi:id="_6J2ebLh_Eea0-M9ZRBNjOA" name="SALES" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_F1-uUbiAEea0-M9ZRBNjOA" name="Cost_HDR" type="VARCHAR" nullable="false" length="127" scale="0">
+      </attributes>
+      <attributes xmi:id="_F1-uUriAEea0-M9ZRBNjOA" name="Cost" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+    </outputs>
+    <tableMappings xmi:id="_BETIALiAEea0-M9ZRBNjOA" source="_6J2eaLh_Eea0-M9ZRBNjOA" target="_6J2eabh_Eea0-M9ZRBNjOA">
+      <attributeMappings xmi:id="_BETIAbiAEea0-M9ZRBNjOA" source="_6j4vALh_Eea0-M9ZRBNjOA" target="_BESg8LiAEea0-M9ZRBNjOA">
+      </attributeMappings>
+    </tableMappings>
+    <pivotSets xmi:id="_6J2ebbh_Eea0-M9ZRBNjOA" pivotAttributes="_6j5WELh_Eea0-M9ZRBNjOA _6j5WEbh_Eea0-M9ZRBNjOA _6j5WErh_Eea0-M9ZRBNjOA _6j5WE7h_Eea0-M9ZRBNjOA" headerAttribute="_6J2ea7h_Eea0-M9ZRBNjOA" dataAttribute="_6J2ebLh_Eea0-M9ZRBNjOA">
+    </pivotSets>
+    <pivotSets xmi:id="_F1-uULiAEea0-M9ZRBNjOA" pivotAttributes="_6j6kMLh_Eea0-M9ZRBNjOA _6j6kMbh_Eea0-M9ZRBNjOA _6j6kMrh_Eea0-M9ZRBNjOA _6j6kM7h_Eea0-M9ZRBNjOA" headerAttribute="_F1-uUbiAEea0-M9ZRBNjOA" dataAttribute="_F1-uUriAEea0-M9ZRBNjOA">
+    </pivotSets>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="_JuVf8LiAEea0-M9ZRBNjOA" name="REGIONSALESCOST_UNPIVOT" type="TEMPLATE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="REGIONSALESCOST_UNPIVOT" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="_JuVf8biAEea0-M9ZRBNjOA" key="sap.afm.description" value="Create a catalog object and write data to it">
+    </annotations>
+    <annotations xmi:id="_JuVf8riAEea0-M9ZRBNjOA" key="sap.afm.displayName" value="Data Sink (Template Table)">
+    </annotations>
+    <annotations xmi:id="_JuVf87iAEea0-M9ZRBNjOA" key="sap.afm.layout">
+      <annotations xmi:id="_JuVf9LiAEea0-M9ZRBNjOA" key="x" value="504">
+      </annotations>
+      <annotations xmi:id="_JuVf9biAEea0-M9ZRBNjOA" key="y" value="70">
+      </annotations>
+      <annotations xmi:id="_JuVf9riAEea0-M9ZRBNjOA" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="_JuVf97iAEea0-M9ZRBNjOA" key="height" value="64">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="_UBz647iAEea0-M9ZRBNjOA" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="_UB9E0LiAEea0-M9ZRBNjOA" key="sap.afm.nodeInputs">
+      <annotations xmi:id="_UCAvMLiAEea0-M9ZRBNjOA" key="DATA_2" value="OUTPUT"/>
+    </annotations>
+    <annotations xmi:id="_UCM8cLiAEea0-M9ZRBNjOA" key="sap.afm.nodeOutputs">
+    </annotations>
+    <inputs xmi:id="_JuVf-LiAEea0-M9ZRBNjOA" name="DATA_2" kind="TABLE">
+      <attributes xmi:id="_KDWGoLiAEea0-M9ZRBNjOA" name="Quarter" type="INTEGER" nullable="false" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_KDWGobiAEea0-M9ZRBNjOA" name="Region" type="VARCHAR" nullable="true" length="50" scale="0">
+      </attributes>
+      <attributes xmi:id="_KDWGoriAEea0-M9ZRBNjOA" name="Sales_HDR" type="VARCHAR" nullable="false" length="127" scale="0">
+      </attributes>
+      <attributes xmi:id="_KDWGo7iAEea0-M9ZRBNjOA" name="SALES" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="_KDWGpLiAEea0-M9ZRBNjOA" name="Cost_HDR" type="VARCHAR" nullable="false" length="127" scale="0">
+      </attributes>
+      <attributes xmi:id="_KDWGpbiAEea0-M9ZRBNjOA" name="Cost" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+    </inputs>
+  </nodes>
+</flowgraph:ContainerNode>

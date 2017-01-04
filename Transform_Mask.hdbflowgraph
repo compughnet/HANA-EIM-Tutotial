@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:id="41ca77826ae9f61a0ead145a21889a94" name="Transform_Mask" runtimeBehavior="BATCH_TASK" targetSchema="EIM_DEMO">
+  <annotations xmi:id="7af532bfae706be0ee5d530508e99d0d" key="sap.afm.layout">
+    <annotations xmi:id="f87ac5e8818611eec6065f75ecfeec90" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="8b6a35121869bc03b28f0557f2eac7db" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="231dff174a0a604de054593104dc4e35" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="40a3f1d2d4015a352c2a92666839cec5" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="eeee0f56378d7f445b1715ee1144c940" key="sap.afm.palette">
+    <annotations xmi:id="a5ad7a1d393e663417d8f698c474f1e5" key="additions" value="">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="24e2940c2ed8482ab143849ef26ba0e7" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="2e83ed005c9564ab68914880cca50e06" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="7ccadcf9a459b6229ff6d52900982d85" key="sap.afm.nodeOutputs">
+    <annotations/>
+  </annotations>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="8e64520ba5d3620b3548d56271ee342a" name="EMPLOYEE_DETAILS" type="DATABASE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="EMPLOYEE_DETAILS" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="126e66b4c30d9387be6825a843d5e116" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="d1175800426741a87b914241e1a05804" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="89bc38ed82fc8fcd20ec9467600fac71" key="sap.afm.layout">
+      <annotations xmi:id="c7e07db1902b171cca8c908c8b4dc12d" key="x" value="129">
+      </annotations>
+      <annotations xmi:id="9f9d0cceb268c5b509bf3b80ea44ed0a" key="y" value="73">
+      </annotations>
+      <annotations xmi:id="ea9ca3e70a67eed0d68037bbea1896b8" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="b8e217facd3a217998bdedfd545870f8" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="5dc341a83e3937afe6d5c21eba5fd886" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="f67e6c0ca017bed11a7bd92fac8daf6b" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="64bb809e0f6bcf01726617b9f8c659e1" key="sap.afm.nodeOutputs">
+    </annotations>
+    <outputs name="EMPLOYEE_DETAILS_Output" kind="TABLE" xmi:id="15d7f52ad20061b2b6affd6641c22419">
+      <attributes xmi:id="66349cf78c9c2b9c4f084fd6a516ccc5" name="Emp_ID" type="INTEGER" length="0" scale="0" nullable="false">
+      </attributes>
+      <attributes xmi:id="3503027f6e71c02c5434ff5611bc19a9" name="Start_Date" type="TIMESTAMP" length="0" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="b2101ca2ded6cfcdc033a8d0edb994e3" name="Bank_Account" type="VARCHAR" length="10" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="21d518dcf94ba7bf57d4d21602145764" name="Salary" type="INTEGER" length="0" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataMaskNode" xmi:id="a6f1ee79d47fa5d88a3f286846388776" name="DataMask1">
+    <annotations xmi:id="9a314736ff273031182d1bb2e05f39fe" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="520dbd0589526d4d25dde07a7d3fbaa8" key="sap.afm.displayName" value="Function">
+    </annotations>
+    <annotations xmi:id="a72445047ee247d7e25b074af0715053" key="sap.afm.layout">
+      <annotations xmi:id="092eb4c1bb8e857c732d06209093a1b3" key="x" value="264">
+      </annotations>
+      <annotations xmi:id="b629eb323da9c6eec70d6c457704e72e" key="y" value="113">
+      </annotations>
+      <annotations xmi:id="46e0d28e2dd560041926e65bd6fb96e4" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="43e90ea254d108110cd0af01489bdc27" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="5a05afb3f1de7643f7320262a70d3659" key="sap.afm.nodeType" value="DataMaskNode">
+    </annotations>
+    <annotations xmi:id="8ae29a38634540c4f631b04426efec1a" key="sap.afm.nodeInputs">
+      <annotations xmi:id="2cd74db14ebab741a8fbe5c9e37f38b3" key="Input_EMPLOYEE_DETAILS" value="EMPLOYEE_DETAILS">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="a420d087cd45c85d58df976182aad1d2" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="67488e70c0e67d342c9fdc917a4238d8" key="DataMask1" value="Employee_Details_Masked_Input">
+      </annotations>
+    </annotations>
+    <annotations key="sap.im.propertyGroups">
+      <annotations key="seed" value="">
+      </annotations>
+      <annotations key="dateParsing">
+        <annotations key="defaultDateFormat" value="monthDayYear">
+        </annotations>
+        <annotations key="defaultMonthFormat" value="short">
+        </annotations>
+        <annotations key="defaultLanguage" value="EN">
+        </annotations>
+      </annotations>
+      <annotations key="maskings">
+        <annotations key="dateVariance">
+          <annotations key="mappedName" value="DATE">
+          </annotations>
+          <annotations key="type" value="range">
+          </annotations>
+          <annotations key="variance" value="">
+          </annotations>
+          <annotations key="minDate" value="2015.01.01">
+          </annotations>
+          <annotations key="maxDate" value="2018.12.31">
+          </annotations>
+        </annotations>
+        <annotations key="patternVariance">
+          <annotations key="mappedName" value="GENERAL_DATA">
+          </annotations>
+          <annotations key="definition">
+            <annotations key="startingPosition" value="8">
+            </annotations>
+            <annotations key="length" value="3">
+            </annotations>
+            <annotations key="type" value="default">
+            </annotations>
+            <annotations key="value" value="">
+            </annotations>
+          </annotations>
+        </annotations>
+        <annotations key="maskOut">
+          <annotations key="mappedName" value="NUMERIC_DATA">
+          </annotations>
+          <annotations key="startingPosition" value="start">
+          </annotations>
+          <annotations key="unmaskedLength" value="1">
+          </annotations>
+          <annotations key="maskingCharacter" value="9">
+          </annotations>
+          <annotations key="maintainFormatting" value="false">
+          </annotations>
+        </annotations>
+      </annotations>
+    </annotations>
+    <outputs name="DataMask1" kind="TABLE" xmi:id="042eb27959b3a2d773da3281d6e884a6">
+      <attributes xmi:id="0accfa164b68956b1b10b40a7df0d260" name="Emp_ID" type="INTEGER" nullable="false" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="4588bf9eafe4e0f869a820c82bbd1a75" name="Start_Date" type="TIMESTAMP" nullable="true" length="0" scale="0" mappedName="DATE">
+      </attributes>
+      <attributes xmi:id="86fcd99e03fc979936824a0b86cb62ed" name="Bank_Account" type="VARCHAR" nullable="true" length="10" scale="0" mappedName="GENERAL_DATA">
+      </attributes>
+      <attributes xmi:id="50b25a6d6d5b62753dabbf8c1cac27fd" name="Salary" type="INTEGER" nullable="true" length="0" scale="0" mappedName="NUMERIC_DATA">
+      </attributes>
+    </outputs>
+    <inputs name="Input_EMPLOYEE_DETAILS" kind="TABLE" xmi:id="7d99fdb49976868b74916c11fba2c319">
+      <attributes xmi:id="0c10c0b763c882eb105ff46ef69c4fd4" name="Emp_ID" type="INTEGER" nullable="false" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="acca8e2fda507a3fc4338070cd4891bd" name="Start_Date" type="TIMESTAMP" nullable="true" length="0" scale="0" mappedName="DATE">
+      </attributes>
+      <attributes xmi:id="8d58e85d0c59b510f8fad33d8d3353c9" name="Bank_Account" type="VARCHAR" nullable="true" length="10" scale="0" mappedName="GENERAL_DATA">
+      </attributes>
+      <attributes xmi:id="5aedfebf79f6df8567fdbdf92ecc4cf2" name="Salary" type="INTEGER" nullable="true" length="0" scale="0" mappedName="NUMERIC_DATA">
+      </attributes>
+    </inputs>
+    <tableMappings xmi:id="660477a9c0b7fef2ff91fe30c83c53bd" source="7d99fdb49976868b74916c11fba2c319" target="042eb27959b3a2d773da3281d6e884a6">
+      <attributeMappings source="0c10c0b763c882eb105ff46ef69c4fd4" target="0accfa164b68956b1b10b40a7df0d260" xmi:id="c13733bd65c29bbc90f2629db4c17815">
+      </attributeMappings>
+      <attributeMappings source="acca8e2fda507a3fc4338070cd4891bd" target="4588bf9eafe4e0f869a820c82bbd1a75" xmi:id="c987bb0c228bbb899c39ca5700974c8d">
+      </attributeMappings>
+      <attributeMappings source="8d58e85d0c59b510f8fad33d8d3353c9" target="86fcd99e03fc979936824a0b86cb62ed" xmi:id="6ae5cad968fd80755f3b953f84e70415">
+      </attributeMappings>
+      <attributeMappings source="5aedfebf79f6df8567fdbdf92ecc4cf2" target="50b25a6d6d5b62753dabbf8c1cac27fd" xmi:id="099091cf01953aaf2c64972ae77f7c7b">
+      </attributeMappings>
+    </tableMappings>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="c5b0b3d26e02c8812b3313b303da1122" name="Employee_Details_Masked" type="TEMPLATE_TABLE" authoringSchemaName="EIM_DEMO" catalogObjectName="Employee_Details_Masked" dataLayout="COLUMN" truncateTable="true">
+    <annotations xmi:id="76dc91dc87eada3bab8961f5b4e4cabc" key="sap.afm.layout">
+      <annotations xmi:id="00d2ba5d65fe68cf582d2cfa86dafb9f" key="x" value="502">
+      </annotations>
+      <annotations xmi:id="bf33b0de5af5c9f5aa9023dafe12d309" key="y" value="118">
+      </annotations>
+      <annotations xmi:id="a6fa89ab172a1db1163c20138a371217" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="757aa2f43469a6d6424c0b4284c2b2ba" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="49f1a6186a8b9d841f72246b8dca55f7" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="36746c49f08d04c9eed0257fb3f6addf" key="sap.afm.nodeInputs">
+      <annotations xmi:id="207b0662965766edc1cb618fb79fba5c" key="Employee_Details_Masked_Input" value="DataMask1">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="9f5afc5656d3081179ba27013c8c34a9" key="sap.afm.nodeOutputs">
+      <annotations/>
+    </annotations>
+    <annotations xmi:id="e52c5a5946697bab3f5ef5a3ad720007" key="sap.im.historyTable" value="">
+    </annotations>
+    <inputs name="Employee_Details_Masked_Input" kind="TABLE" xmi:id="27945b056cb653d9063d7b8217b098d7">
+      <attributes xmi:id="25d5ff1fb93f757d5e6511bc0e544add" name="Emp_ID" type="INTEGER" nullable="false" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="fff0401e87d63eb697ffdeee83f890cd" name="Start_Date" type="TIMESTAMP" nullable="true" length="0" scale="0">
+      </attributes>
+      <attributes xmi:id="e50733360a7c42546a7a518442eeadd9" name="Bank_Account" type="VARCHAR" nullable="true" length="10" scale="0">
+      </attributes>
+      <attributes xmi:id="e957d03c146afb33ab0055427ef44655" name="Salary" type="INTEGER" nullable="true" length="0" scale="0">
+      </attributes>
+    </inputs>
+  </nodes>
+  <tableMappings xmi:id="1531e561f235623eb8e5ac7d17be7d31" source="15d7f52ad20061b2b6affd6641c22419" target="7d99fdb49976868b74916c11fba2c319">
+    <attributeMappings source="66349cf78c9c2b9c4f084fd6a516ccc5" target="0c10c0b763c882eb105ff46ef69c4fd4" xmi:id="e43c20f3dad23bf1a1f5593317492bae">
+    </attributeMappings>
+    <attributeMappings source="3503027f6e71c02c5434ff5611bc19a9" target="acca8e2fda507a3fc4338070cd4891bd" xmi:id="5bea88380f0046883ce8c2e03360efd7">
+    </attributeMappings>
+    <attributeMappings source="b2101ca2ded6cfcdc033a8d0edb994e3" target="8d58e85d0c59b510f8fad33d8d3353c9" xmi:id="eb1ac1ead6400992ef087dc8d21b03f0">
+    </attributeMappings>
+    <attributeMappings source="21d518dcf94ba7bf57d4d21602145764" target="5aedfebf79f6df8567fdbdf92ecc4cf2" xmi:id="3683141accc00e1f6a520894f9202647">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="dea267ca0b69c70d34be94f89f344da8" source="042eb27959b3a2d773da3281d6e884a6" target="27945b056cb653d9063d7b8217b098d7">
+    <attributeMappings source="0accfa164b68956b1b10b40a7df0d260" target="25d5ff1fb93f757d5e6511bc0e544add" xmi:id="743178dc5311adfb4a5097e24e57fd95">
+    </attributeMappings>
+    <attributeMappings source="4588bf9eafe4e0f869a820c82bbd1a75" target="fff0401e87d63eb697ffdeee83f890cd" xmi:id="97f56425135974b505fcce8d3ed09208">
+    </attributeMappings>
+    <attributeMappings source="86fcd99e03fc979936824a0b86cb62ed" target="e50733360a7c42546a7a518442eeadd9" xmi:id="72b11197e79f31447fefc6075292e717">
+    </attributeMappings>
+    <attributeMappings source="50b25a6d6d5b62753dabbf8c1cac27fd" target="e957d03c146afb33ab0055427ef44655" xmi:id="e4e07f48c8fe52ff73c5ef740934510b">
+    </attributeMappings>
+  </tableMappings>
+</flowgraph:ContainerNode>
